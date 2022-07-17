@@ -1,6 +1,6 @@
-from Font.Colors import Color
-from Font.Highlights import Highlight
-from Font.Styles import Style
+from Font import Color
+from Font import Style
+from Font import Highlight
 
 
 def printTesting(msg, color, reset=True):
