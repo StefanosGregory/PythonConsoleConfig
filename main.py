@@ -1,6 +1,4 @@
-from Font import Color
-from Font import Style
-from Font import Highlight
+from Font import Color, Style, Highlight
 
 
 def printTesting(msg, color, reset=True):
