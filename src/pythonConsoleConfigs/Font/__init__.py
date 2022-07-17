@@ -1,3 +1,3 @@
-from Colors import Color
-from Highlights import Highlight
-from Styles import Style
+from src.pythonConsoleConfigs.Font.Colors import Color
+from src.pythonConsoleConfigs.Font.Highlights import Highlight
+from src.pythonConsoleConfigs.Font.Styles import Style
