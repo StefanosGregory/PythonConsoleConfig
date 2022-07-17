@@ -5,7 +5,7 @@ class Highlight:
     YELLOW = '\33[43m'
     BLUE = '\33[44m'
     MAGENTA = '\33[45m'
-    BEIGE = '\33[46m'
+    CYAN = '\33[46m'
     WHITE = '\33[47m'
     GREY = '\33[100m'
 
@@ -14,5 +14,5 @@ class Highlight:
     LIGHT_YELLOW = '\33[103m'
     LIGHT_BLUE = '\33[104m'
     LIGHT_MAGENTA = '\33[105m'
-    LIGHT_BEIGE = '\33[106m'
+    LIGHT_CYAN = '\33[106m'
     LIGHT_WHITE = '\33[107m'

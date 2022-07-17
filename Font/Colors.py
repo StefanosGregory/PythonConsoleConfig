@@ -5,7 +5,7 @@ class Color:
     YELLOW = '\33[33m'
     BLUE = '\33[34m'
     MAGENTA = '\33[35m'
-    BEIGE = '\33[36m'
+    CYAN = '\33[36m'
     WHITE = '\33[37m'
     GREY = '\33[90m'
 
@@ -14,5 +14,5 @@ class Color:
     LIGHT_YELLOW = '\33[93m'
     LIGHT_BLUE = '\33[94m'
     LIGHT_MAGENTA = '\33[95m'
-    LIGHT_BEIGE = '\33[96m'
+    LIGHT_CYAN = '\33[96m'
     LIGHT_WHITE = '\33[97m'

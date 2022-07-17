@@ -5,8 +5,7 @@ class Style:
     BLINK = '\33[5m'
     BLINK2 = '\33[6m'
     SELECTED = '\33[7m'
-
-    __END = '\33[0m'
+    __RESET = '\33[0m'
 
     def reset(self):
-        print(self.__END, end=" ")
+        print(self.__RESET, end="")
