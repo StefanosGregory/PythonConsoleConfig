@@ -13,7 +13,7 @@ pip install pythonConsoleConfig
 ## Usage
 
 ```python
-from Font import Color, Style, Highlight
+from pythonConsoleConfigs.Font import Color, Style, Highlight
 
 # prints magenta
 print(f'{Color.MAGENTA}{"This is a test of Python Console Configuration Library"}')
