@@ -15,12 +15,10 @@ class Box:
         animation = []
         accumulator = size - 1
         if self.reverse:
-            e, f = self.__fullBox__, self.__emptyBox__
-        else:
-            f, e = self.__fullBox__, self.__emptyBox__
+            self.__emptyBox__, self.__fullBox__ = self.__fullBox__, self.__emptyBox__
 
         for r in range(1, size + 1):
-            animation.append(f * r + e * accumulator)
+            animation.append(self.__fullBox__ * r + self.__emptyBox__ * accumulator)
             accumulator -= 1
         self.animation = animation
 
@@ -28,4 +26,4 @@ class Box:
         run(self.color, self.animation, self.seconds)
 
 
-Box(1, 10, c.BLUE, False).loading()
+Box(1, 10, c.BLUE, True).loading()
