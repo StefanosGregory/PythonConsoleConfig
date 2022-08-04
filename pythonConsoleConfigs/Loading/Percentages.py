@@ -1,7 +1,5 @@
-import sys
-import time
 from pythonConsoleConfigs.Font import Color as c
-from pythonConsoleConfigs.Font import Style as s
+from __helper__ import run
 
 
 class Percentage:
@@ -11,19 +9,17 @@ class Percentage:
         self.__rate__(rate)
 
     def __rate__(self, rate):
-        if rate == 10:
-            self.animation = ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"]
-        elif rate == 5:
-            self.animation = ["5%", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "60%", "65%",
-                              "70%", "75%", "80%", "85%", "90%", "95%", "100%"]
+        if 100 % rate == 0:
+            animation = []
+            for r in range(1, int(100 / rate) + 1):
+                animation.append((str(r * rate) + "%"))
+            self.animation = animation
 
     def loading(self):
-        print(self.color, end="")
-        for i in range(len(self.animation)):
-            time.sleep(self.seconds)
-            sys.stdout.write("\r" + self.animation[i % len(self.animation)])
-            sys.stdout.flush()
-        s().reset()
+        try:
+            run(self.color, self.animation, self.seconds)
+        except AttributeError:
+            raise Exception("Error, rate must be divisor of 100!")
 
 
-Percentage(1, 5, c.BLUE).loading()
+Percentage(100, 10, c.BLUE).loading()
