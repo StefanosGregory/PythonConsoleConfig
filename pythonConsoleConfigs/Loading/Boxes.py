@@ -1,5 +1,5 @@
 from pythonConsoleConfigs.Font import Color as c
-from __helper__ import run
+from pythonConsoleConfigs.Loading.helper import run
 
 
 class Box:
@@ -24,6 +24,3 @@ class Box:
 
     def loading(self):
         run(self.color, self.animation, self.seconds)
-
-
-Box(1, 10, c.BLUE, True).loading()

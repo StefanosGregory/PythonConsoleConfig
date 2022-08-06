@@ -1,4 +1,5 @@
 from Font import Color, Style, Highlight
+from Loading import Box, Percentage
 
 
 def printTesting(msg, color, reset=True):
@@ -16,10 +17,5 @@ if __name__ == '__main__':
     printTesting('This is a test of Python Console Configuration Library', Color.LIGHT_RED)
     print("TEST OF RESET")
 
-
-    import sys
-    for i in range(0, 16):
-        for j in range(0, 16):
-            code = str(i * 16 + j)
-            sys.stdout.write(u"\u001b[38;5;" + code + "m " + code.ljust(4))
-        print(u"\u001b[0m")
+    Box(duration=1, size=15, color=Color.BLUE, reverse=True).loading()
+    Percentage(duration=1, rate=10, color=Color.RED).loading()

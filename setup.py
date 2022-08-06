@@ -21,5 +21,5 @@ setup(
     author_email='gregorystefanos@gmail.com',
     packages=setuptools.find_packages(),
     url='https://github.com/StefanosGregory/PythonConsoleConfig',
-    keywords=['Python', 'Console', 'Configuration', 'Font', 'Color', 'Highlight', 'Style']
+    keywords=['Python', 'Console', 'Configuration', 'Font', 'Color', 'Highlight', 'Style', 'Loading', 'Load']
 )

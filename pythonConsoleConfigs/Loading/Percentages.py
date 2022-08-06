@@ -1,5 +1,5 @@
 from pythonConsoleConfigs.Font import Color as c
-from __helper__ import run
+from pythonConsoleConfigs.Loading.helper import run
 
 
 class Percentage:
@@ -20,6 +20,3 @@ class Percentage:
             run(self.color, self.animation, self.seconds)
         except AttributeError:
             raise Exception("Error, rate must be divisor of 100!")
-
-
-Percentage(100, 10, c.BLUE).loading()

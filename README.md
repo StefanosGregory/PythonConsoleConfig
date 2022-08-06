@@ -1,6 +1,6 @@
 # Python Console Configuration
 
-Python Console Configuration is a Python library for customization the output of terminal by color, style and highlight.
+Python Console Configuration is a Python library for customization the output of terminal by color, style and highlight. Also, can have loadings.
 
 ## Installation
 
@@ -10,7 +10,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Python 
 pip install pythonConsoleConfig
 ```
 
-## Usage
+## Usage Font
 
 ```python
 from pythonConsoleConfigs.Font import Color, Style, Highlight
@@ -48,6 +48,38 @@ Style().reset()
   * BLINK 
   * BLINK2 
   * SELECTED
+
+## Usage Loading
+
+```python
+from pythonConsoleConfigs.Font import Color
+from pythonConsoleConfigs.Loading import Box, Percentage
+
+# Boxes loading like: ■■■□□□□□□□
+Box(duration=1, size=15, color=Color.BLUE, reverse=True).loading()
+
+# Percentages like: 20%
+Percentage(duration=1, rate=10, color=Color.RED).loading()
+```
+
+## Available Loading
+* Boxes
+  * Normal   (■■■□□□□□□□) 
+  * Reversed (□□□□□□□■■■) 
+  * Duration (seconds)
+  * Number of boxes
+  * Color
+
+* Percentages
+  * Duration (seconds)
+  * Rate (by 5%, 10% etc.)
+  * Color
+
+## Contact
+Contact me using [discord](https://discord.com) for support or requests.
+```
+GregoryStefanos#1048
+```
 
 
 ## License
