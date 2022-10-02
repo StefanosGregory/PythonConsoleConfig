@@ -1,3 +1,5 @@
+
+[![Downloads](https://static.pepy.tech/personalized-badge/pythonconsoleconfigs?period=total&units=international_system&left_color=lightgrey&right_color=green&left_text=Downloads)](https://pepy.tech/project/pythonconsoleconfigs)
 # Python Console Configuration
 
 Python Console Configuration is a Python library for customization the output of terminal by color, style and highlight. Also, can have loadings.
