@@ -9,7 +9,7 @@ Python Console Configuration is a Python library for customization the output of
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Python Console Configuration.
 
 ```bash
-pip install pythonConsoleConfig
+pip install pythonConsoleConfigs
 ```
 
 ## Usage Font
